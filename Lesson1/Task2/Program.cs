@@ -16,3 +16,6 @@ double mult3 = i1 * d1;
 Console.WriteLine(mult1);
 Console.WriteLine(mult2);
 Console.WriteLine(mult3);
+
+double quotient = i1/d1;
+Console.WriteLine(quotient);
