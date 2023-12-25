@@ -82,7 +82,6 @@ public class Answer
         System.Console.WriteLine($"{result}");
     }
 }
-*/
 
 using System;
 
@@ -114,5 +113,44 @@ class Answer {
 
         // Не удаляйте строки ниже
         CheckIfEven(number);
+    }
+}
+
+*/
+
+using System;
+
+public class Answer
+{
+    static void PrintEvenNumbers(int number)
+    {
+        // Введите свое решение ниже
+        Console.Write($"number = {number} -> ");
+        for (int i = 2; i <= number; i = i + 2)
+        {
+            Console.Write(i);
+            Console.Write('\t');
+        }
+        Console.WriteLine();
+    }
+
+
+    // Не удаляйте и не меняйте метод Main! 
+    static public void Main(string[] args)
+    {
+        int number;
+
+        if (args.Length >= 1)
+        {
+            number = int.Parse(args[0]);
+        }
+        else
+        {
+            // Здесь вы можете поменять значения для отправки кода на Выполнение
+            number = 12;
+        }
+
+        // Не удаляйте строки ниже
+        PrintEvenNumbers(number);
     }
 }
