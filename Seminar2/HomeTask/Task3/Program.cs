@@ -1,0 +1,11 @@
+﻿Console.WriteLine("Введите двухзначное число.");
+int num = Convert.ToInt32(Console.ReadLine());
+int num1 = num / 10;
+int num2 = num % 10;
+if (num1 > num2)
+{
+    Console.WriteLine($"Первая цифра `{num1}` больше второй `{num2}`");
+}
+else{
+    Console.WriteLine($"Вторая цифра `{num2}` больше первой `{num1}`");
+}
