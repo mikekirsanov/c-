@@ -6,6 +6,7 @@ if (num1 > num2)
 {
     Console.WriteLine($"Первая цифра `{num1}` больше второй `{num2}`");
 }
-else{
+else
+{
     Console.WriteLine($"Вторая цифра `{num2}` больше первой `{num1}`");
 }
