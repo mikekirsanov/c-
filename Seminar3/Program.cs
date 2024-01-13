@@ -25,18 +25,18 @@ Console.WriteLine(find);
 
 int sizeArray = 10;
 
-int [] arrray = new int [sizeArray];
+int [] array = new int [sizeArray];
 
-for (int i = 0; i < arrray.Length; i++)
+for (int i = 0; i < array.Length; i++)
 {
-arrray[i] = new Random().Next(-10,11);
-Console.Write(arrray[i]+ " ");
+[i] = new Random().Next(-10,11);
+Console.Write([i]+ " ");
 }
 
 System.Console.WriteLine();
 
-for (int i = 0; i < arrray.Length; i++)
+for (int i = 0; i < .Length; i++)
 {
-arrray[i] = -1 * arrray[i];
-Console.Write(arrray[i]+ " ");
+[i] = -1 * [i];
+Console.Write([i]+ " ");
 }
