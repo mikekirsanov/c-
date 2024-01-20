@@ -14,9 +14,9 @@ int[] CreateMassive(int size)
 
 void PrintMassive(int[] array)
 {
-    for (int i = 0; i < array.Length; i++)
+    foreach (int e in array)
     {
-        Console.Write(array[i] + " ");
+        Console.Write(e + " ");
     }
     Console.WriteLine();
 }
