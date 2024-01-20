@@ -24,9 +24,9 @@ void PrintMassive(int[] array)
 int EvenNumbersCount(int[] array)
 {
     int count = 0;
-    for (int i = 0; i < array.Length; i++)
+    foreach (int e in array)
     {
-        if (array[i] % 2 == 0) count += 1;
+        if (e % 2 == 0) count += 1;
     }
     return count;
 }
