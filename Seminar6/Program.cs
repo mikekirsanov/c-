@@ -23,7 +23,7 @@ System.Console.WriteLine(str);
 // Пример
 // “Hello!” => [‘H’, ‘e’, ‘l’, ‘l’, ‘o’, ‘!’ ] 
 
-System.Console.WriteLine("Введите строчку");
+/*System.Console.WriteLine("Введите строчку");
 string str = Console.ReadLine();
 char [] array = new char[str.Length];
 
@@ -31,4 +31,28 @@ for (int i = 0; i < array.Length; i++)
 {
     array[i] = str[i];
     System.Console.Write(array[i] + "");
+*/
+
+// Считать строку с консоли, состоящую из латинских
+// букв в нижнем регистре. Выяснить, сколько среди
+// введённых букв гласных.
+// Пример
+// “hello” => 2
+// “world” => 1
+
+string userInput = Console.ReadLine();
+string vowels ="aeiyuo";
+
+int countVowels = 0;
+
+for (int i = 0; i < userInput.Length; i++)
+{
+    for (int j = 0; j < vowels.Length; j++)
+    {
+        if(userInput[i].ToString().ToLower()== vowels[j].ToString())
+        {
+            countVowels++;
+        }
+    }
 }
+System.Console.WriteLine(countVowels);
