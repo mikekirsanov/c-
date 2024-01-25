@@ -72,7 +72,7 @@ void PrintStr(string newStr, int i)
 
     if(!vowels.Contains(newStr[i]))
     {
-        System.Console.WriteLine(newStr[i]);
+        System.Console.Write(newStr[i]);
     }
     PrintStr(str,++i);
 }
