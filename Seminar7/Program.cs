@@ -28,6 +28,7 @@ System.Console.WriteLine(GetSumNum(num));
 // Пример
 // N=5 => 1 2 3 4 5
 
+/*
 System.Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
 int firstElement = 1;
@@ -45,3 +46,34 @@ void PrintNumbers(int firstNum, int endNum)
 
     PrintNumbers(firstNum+1, endNum);
 }
+*/
+
+// Считать строку с консоли, содержащую латинские буквы.
+// Вывести на экран согласные буквы этой строки.
+// Указание
+// Использовать рекурсию. Не использовать цикл.
+// Пример
+// “hello” => h l l
+// “World” => W r l d
+// “Hello world!” => H l l w r l d
+
+System.Console.WriteLine("Введите строку");
+string str = Console.ReadLine();
+int index=0;
+string vowels= "aeiuoy";
+
+void PrintStr(string newStr, int i)
+{
+
+    if(i==newStr.Length)
+    {
+        return;
+    }
+
+    if(!vowels.Contains(newStr[i]))
+    {
+        System.Console.WriteLine(newStr[i]);
+    }
+    PrintStr(str,++i);
+}
+PrintStr(str,index);
