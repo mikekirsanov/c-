@@ -15,7 +15,7 @@ Console.WriteLine(str);
 
 //Задача 2: Задайте строку, содержащую латинские буквы в обоих регистрах. Сформируйте строку, в которой все заглавные буквы заменены на строчные.
 
-using System;
+/*using System;
 Random rnd = new Random();
 Console.WriteLine("Введите размер строки.");
 int num = Convert.ToInt32(Console.ReadLine());
@@ -31,3 +31,27 @@ for(int i = 0; i < num; i++)
 Console.WriteLine(str);
 string str2 = str.ToLower();
 Console.WriteLine(str2);
+*/
+//Задача 3: Задайте произвольную строку. Выясните, является ли она палиндромом.
+
+using System;
+Console.WriteLine("Введите строку.");
+string? str = Console.ReadLine();
+int size = str.Length;
+char[] symArray = new char[size];
+for(int i = 0; i < size; i++)
+{
+    symArray[i] += str[i];
+}
+bool pal = true;
+for(int i = 0; i < size/2; i++)
+{
+    if(symArray[i] == symArray[size - 1 - i]) pal = true;
+    else
+    {
+        pal = false;
+        break;
+    }
+}
+if(pal) Console.WriteLine("Введенная строка является палиндромом");
+else Console.WriteLine("Введенная строка не является палиндромом");
